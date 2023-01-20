@@ -1,5 +1,5 @@
 <?php include('../config.php') ?>
-<?php include('includes/admin_functions.php'); ?>
+<?php include 'includes/admin_functions.php'; ?>
 <?php include('includes/head_section.php'); ?>
 	<title>Admin | Dashboard</title>
 </head>
