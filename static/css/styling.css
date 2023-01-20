@@ -1,0 +1,295 @@
+/****************
+*** DEFAULTS
+*****************/
+* { margin: 0px; padding: 0px; }
+
+html { height: 100%; box-sizing: border-box; }
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+/* HEADINGS DEFAULT */
+h1, h2, h3, h4, h5, h6 { color: #444; font-family: 'Averia Serif Libre', cursive; }
+a { text-decoration: none; }
+ul, ol { margin-left: 40px; }
+hr { margin: 10px 0px; opacity: .25; }
+
+/* FORM DEFAULTS */
+form h2 {
+	margin: 25px auto;
+	text-align: center;
+	font-family: 'Averia Serif Libre', cursive;
+}
+form input {
+	width: 100%;
+	display: block;
+	padding: 13px 13px;
+	font-size: 1em;
+	margin: 5px auto 10px;
+	border-radius: 3px;
+	box-sizing : border-box;
+	background: transparent;
+	border: 1px solid #3E606F;
+}
+form input:focus {
+	outline: none;
+}
+/* BUTTON DEFAULT */
+.btn {
+	color: white;
+	background: #f9d71c;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	display: block;
+	letter-spacing: .1em;
+	margin: 10px 0px;
+	padding: 13px 20px;
+	text-decoration: none;
+        cursor: pointer
+}
+.container {
+	width: 80%;
+	margin: 0px auto;
+}
+/* NAVBAR */
+.navbar {
+	margin: 0 auto;
+    overflow: hidden;
+	background-color: #120a8f;
+    border-radius: 0px 0px 6px 6px;
+}
+.navbar ul {
+    list-style-type: none;
+    float: right;
+}
+.navbar ul li {
+    float: left;
+    font-family: 'Noto Serif', serif;
+}
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 28px;
+    text-decoration: none;
+}
+.navbar ul li a:hover {
+	color: #B9E6F2;
+    background-color: #334F5C;
+}
+
+/* LOGO */
+.navbar .logo_div {
+	float: left; 
+	padding-top: 5px;
+	padding-left: 40px;
+}
+.navbar .logo_div h1 {
+	color: #f9d71c;
+	font-size: 3em;
+	letter-spacing: 5px;
+	font-weight: 100;
+	font-family: 'Tangerine', cursive;
+}
+
+/* FOOTER */
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background-color: #73707D;
+  text-align: center;
+  width: 80%;
+  margin: 20px auto 0px;
+  padding: 20px 0px;
+}
+
+.banner {
+	margin: 5px auto;
+	min-height: 400px;
+	color: white;
+	border-radius: 5px;
+	background-image: url('../images/banner.jpg');
+	background-size: 100% 100%;
+}
+.banner .welcome_msg {
+	width: 45%;
+	float: left;
+	padding: 20px;
+}
+.banner .welcome_msg h1 {
+	color: #B9E6F2;
+	margin: 25px 0px;
+	font-size: 2.4em;
+	font-family: 'Averia Serif Libre', cursive;
+}
+.banner .welcome_msg p {
+	color: white;
+	font-size: 1.5em;
+	line-height: 1.8em;
+    font-family: 'Noto Serif', serif;
+}
+.banner .welcome_msg p span {
+	font-size: .81em; 
+	color: #3E606F;
+}
+.banner .welcome_msg a {
+	width: 30%;
+	margin: 20px 0px;
+	padding: 12px 15px;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+.banner .welcome_msg a:hover {
+	background: #374447;
+}
+
+/* BANNER: Login Form; */
+.banner .login_div {
+	width: 50%;
+	float: left;
+}
+.banner .login_div form {
+	margin-top: 40px;
+}
+.banner .login_div form h2 {
+	color: white;
+	margin-bottom: 20px;
+    font-family: 'Noto Serif', serif;
+}
+.banner .login_div form input {
+	width: 60%;
+	color: white;
+	border: 1px solid white;
+	margin: 10px auto;
+	letter-spacing: 1.3px;
+    font-family: 'Noto Serif', serif;
+}
+.banner .login_div form button {
+	display: block;
+	background: #006384;
+	margin-left: 20%;
+}
+
+.message {
+	width: 100%; 
+	margin: 0px auto; 
+	padding: 10px 0px; 
+	color: #3c763d; 
+	background: #dff0d8; 
+	border: 1px solid #3c763d;
+	border-radius: 5px; 
+	text-align: center;
+}
+.error {
+	color: #a94442; 
+	background: #f2dede; 
+	border: 1px solid #a94442; 
+	margin-bottom: 20px;
+}
+.validation_errors p {
+	text-align: left;
+	margin-left: 10px;
+}
+.logged_in_info {
+	text-align: right; 
+	padding: 10px;
+}
+
+.button-27 {
+  appearance: none;
+  background-color: #f9d71c;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
