@@ -1,0 +1,33 @@
+runtime: php81
+runtime_config:
+  document_root: .
+entrypoint: serve src/register.php
+handlers:
+  - url: /css
+    static_dir: src/static/css
+
+  - url: /images
+    static_dir: src/static/images
+  
+  - url: /src/
+    script: src/
+  
+  - url: /env\.php
+    script: src/env.php
+  
+  - url: /src/includes/
+    script: src/includes
+
+  - url: /src/admin/
+    script: src/admin/
+  
+  - url: /src/admin/aincludes/
+    script: src/admin/aincludes
+
+env_variables:
+  APP_LOG: errorlog
+  MYSQL_USER: "root"
+  MYSQL_PASSWORD: "ccchlccc123"
+  MYSQL_DSN: "mysql:dbname=quiznight;unix_socket=/cloudsql/quiz-night-bck:europe-west1:quiznight-data"
+beta_settings:
+  cloud_sql_instances: "quiz-night-bck:europe-west1:quiznight-data"

@@ -1,0 +1,9 @@
+{
+    "require-dev": {
+        "google/cloud-tools":"^0.13"
+    },
+    "require": {
+        "google/cloud":"^0.195",
+        "google/cloud-storage":"^1.30"
+    }
+}
